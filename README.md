@@ -1,3 +1,3 @@
 # LSTouchAndFinger
 
-#简单实用 3Dtouch 和指纹识别解锁
+#简单实用 3dTouch 和指纹识别解锁
