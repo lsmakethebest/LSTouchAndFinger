@@ -16,6 +16,7 @@
 		2829B9621D65C29500D6BE03 /* ___3DTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2829B9611D65C29500D6BE03 /* ___3DTouchTests.m */; };
 		2829B96D1D65C29500D6BE03 /* ___3DTouchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2829B96C1D65C29500D6BE03 /* ___3DTouchUITests.m */; };
 		2829B97C1D65C9ED00D6BE03 /* LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2829B97B1D65C9ED00D6BE03 /* LSViewController.m */; };
+		287CC7BF1D7E5B7A005990B5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 287CC7BE1D7E5B7A005990B5 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		2829B96E1D65C29500D6BE03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2829B97A1D65C9ED00D6BE03 /* LSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSViewController.h; sourceTree = "<group>"; };
 		2829B97B1D65C9ED00D6BE03 /* LSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSViewController.m; sourceTree = "<group>"; };
+		287CC7BD1D7E5B7A005990B5 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		287CC7BE1D7E5B7A005990B5 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,17 +107,15 @@
 		2829B9461D65C29400D6BE03 /* 指纹+3DTouch */ = {
 			isa = PBXGroup;
 			children = (
+				287CC7C11D7E5BA7005990B5 /* 指纹识别 */,
+				287CC7C01D7E5B8E005990B5 /* 3DTouch */,
 				2829B94A1D65C29400D6BE03 /* AppDelegate.h */,
 				2829B94B1D65C29400D6BE03 /* AppDelegate.m */,
-				2829B94D1D65C29400D6BE03 /* ViewController.h */,
-				2829B94E1D65C29400D6BE03 /* ViewController.m */,
 				2829B9501D65C29500D6BE03 /* Main.storyboard */,
 				2829B9531D65C29500D6BE03 /* Assets.xcassets */,
 				2829B9551D65C29500D6BE03 /* LaunchScreen.storyboard */,
 				2829B9581D65C29500D6BE03 /* Info.plist */,
 				2829B9471D65C29400D6BE03 /* Supporting Files */,
-				2829B97A1D65C9ED00D6BE03 /* LSViewController.h */,
-				2829B97B1D65C9ED00D6BE03 /* LSViewController.m */,
 			);
 			path = "指纹+3DTouch";
 			sourceTree = "<group>";
@@ -143,6 +144,26 @@
 				2829B96E1D65C29500D6BE03 /* Info.plist */,
 			);
 			path = "指纹+3DTouchUITests";
+			sourceTree = "<group>";
+		};
+		287CC7C01D7E5B8E005990B5 /* 3DTouch */ = {
+			isa = PBXGroup;
+			children = (
+				2829B94D1D65C29400D6BE03 /* ViewController.h */,
+				2829B94E1D65C29400D6BE03 /* ViewController.m */,
+				2829B97A1D65C9ED00D6BE03 /* LSViewController.h */,
+				2829B97B1D65C9ED00D6BE03 /* LSViewController.m */,
+			);
+			name = 3DTouch;
+			sourceTree = "<group>";
+		};
+		287CC7C11D7E5BA7005990B5 /* 指纹识别 */ = {
+			isa = PBXGroup;
+			children = (
+				287CC7BD1D7E5B7A005990B5 /* HomeViewController.h */,
+				287CC7BE1D7E5B7A005990B5 /* HomeViewController.m */,
+			);
+			name = "指纹识别";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +300,7 @@
 				2829B94F1D65C29400D6BE03 /* ViewController.m in Sources */,
 				2829B94C1D65C29400D6BE03 /* AppDelegate.m in Sources */,
 				2829B9491D65C29400D6BE03 /* main.m in Sources */,
+				287CC7BF1D7E5B7A005990B5 /* HomeViewController.m in Sources */,
 				2829B97C1D65C9ED00D6BE03 /* LSViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +527,7 @@
 				2829B9731D65C29500D6BE03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2829B9741D65C29500D6BE03 /* Build configuration list for PBXNativeTarget "指纹+3DTouchTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +536,7 @@
 				2829B9761D65C29500D6BE03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2829B9771D65C29500D6BE03 /* Build configuration list for PBXNativeTarget "指纹+3DTouchUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +545,7 @@
 				2829B9791D65C29500D6BE03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

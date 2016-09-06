@@ -5,6 +5,41 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="icD-8A-iRi">
+            <objects>
+                <viewController id="VzI-6c-ALf" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H83-lq-WwU"/>
+                        <viewControllerLayoutGuide type="bottom" id="puw-5T-ccH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uOM-db-hcJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJM-eL-qOD">
+                                <rect key="frame" x="185" y="155" width="60" height="30"/>
+                                <state key="normal" title="指纹识别"/>
+                                <connections>
+                                    <action selector="auth:" destination="VzI-6c-ALf" eventType="touchUpInside" id="nWN-xb-zPV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWA-Zh-Bdi">
+                                <rect key="frame" x="184" y="217" width="62" height="30"/>
+                                <state key="normal" title="3DTouch"/>
+                                <connections>
+                                    <segue destination="Vdf-ox-c5N" kind="show" id="lGS-TC-rp9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ye2-js-FsZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RCq-tJ-Jb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="-236"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="Pw0-MI-GWh">
             <objects>
@@ -32,7 +67,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S4Q-86-r6t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1394" y="-151"/>
+            <point key="canvasLocation" x="1259" y="-191"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CzO-VM-BC3">
@@ -45,12 +80,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Vdf-ox-c5N" kind="relationship" relationship="rootViewController" id="ULR-ky-r2M"/>
+                        <segue destination="VzI-6c-ALf" kind="relationship" relationship="rootViewController" id="AYg-to-LNI"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfy-ac-ize" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="38" y="-171"/>
+            <point key="canvasLocation" x="-196" y="-183"/>
         </scene>
     </scenes>
 </document>
